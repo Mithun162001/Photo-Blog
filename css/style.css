@@ -1,0 +1,384 @@
+/* Google font inclusion */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+/* Reset and base styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tilt Prism', sans-serif;
+}
+
+/* Utility classes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header Styles */
+header {
+    background-color: #fffae8; /* Change as needed */
+    padding: 1px 1px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+.logo {
+    font-family: 'Tilt Prism', sans-serif;
+    font-size: 2.5rem; /* Adjust the size as needed */
+    font-weight: bold; /* Bebas Neue is inherently bold, but this ensures it */
+    color: #333; /* Adjust the color as needed */
+    text-decoration: none; /* Removes the underline from the anchor tag */
+    text-transform: uppercase; /* Bauhaus fonts often use uppercase for impact */
+    letter-spacing: 2px; /* Adjust the spacing between letters */
+    margin: 0; /* Adjust as needed */
+    display: flex; /* Adjust as needed */
+    text-align: left; /* Aligns the text to the left */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 150px; /* Adjust as needed */
+    width: 150px; /* Adjust as needed */
+    display: flex;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    font-family: 'Tilt Prism', sans-serif;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    display: flex;
+    gap: 20px; /* Adjust spacing as needed */
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333; /* Adjust color as needed */
+    font-weight: 700;
+    padding: 20px 10px; /* Adjust padding as needed */
+    display: block;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    color: #000; /* Adjust hover/focus color as needed */
+}
+
+/* Mobile menu styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+    background: transparent;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 25px; /* Adjust width as needed */
+    height: 3px; /* Adjust height as needed */
+    background-color: #333; /* Adjust color as needed */
+}
+
+/* Assuming you have a hero.jpg image in your images folder */
+.hero {
+    background: url('C:/Users/gmi/OneDrive - Hewlett Packard Enterprise/Documents/Photography Site/images/hero.jpg') no-repeat center center/cover;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px; /* Adjust based on your design */
+    color: white; /* Text color */
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #f8f8f2;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.subheadline {
+    font-family: 'Raleway', sans-serif;
+    color: #cccccc;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.btn-main {
+    background-color: #e27d60;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-main:hover,
+.btn-main:focus {
+    background-color: #c38d9e; /* Color change on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #000000;
+}
+.about-section {
+    padding: 50px 0; /* Add padding for spacing */
+    background: #f8f8f8; /* Light background for the section */
+}
+
+.portrait-frame {
+    width: 200px; /* Adjust based on your image size */
+    height: 200px;
+    border-radius: 50%; /* Creates a circular frame */
+    overflow: hidden;
+    margin: auto; /* Centers the image */
+}
+
+.portrait {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes any extra space beneath the image */
+}
+
+.about-content {
+    font-family: 'Tilt Prism', sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text alignment */
+}
+
+.about-text h2 {
+    font-family: 'Tilt Prism', sans-serif;
+    font-size: 2rem; /* Large text for the heading */
+    margin-bottom: 20px; /* Spacing below the heading */
+    color: #333; /* Dark color for text */
+}
+
+.about-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #666; /* Medium color for paragraph text */
+    margin-bottom: 10px; /* Spacing between paragraphs */
+}
+.portfolio {
+    padding: 50px 0;
+    background: #eaeaea; /* Light background for the section */
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem; /* Adjust as needed */
+    color: #333; /* Dark color for text */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 0 15px; /* Padding for the grid */
+}
+
+.grid-item {
+    background: #fff; /* White background for grid items */
+    border: 1px solid #ddd; /* Border for the grid items */
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes any extra space beneath the image */
+}
+
+/* Hover effect for grid items */
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Responsive adjustments for the grid */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Sit on top of the page */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/opacity */
+    overflow: hidden; /* Hide scrollbars if necessary */
+}
+
+.lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.contact-section {
+    padding: 50px 0;
+    background: #f9f9f9; /* Light background for the section */
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between form elements */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border for inputs */
+    border-radius: 5px; /* Slightly rounded corners for inputs */
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333; /* Dark background for the button */
+    color: #fff; /* White text for the button */
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #555; /* Slightly lighter background on hover */
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333; /* Dark color for icons to match the button */
+    font-size: 24px; /* Size of the social icons */
+}
+
+.social-link:hover {
+    color: #555; /* Slightly lighter color on hover */
+}
+
+/* Adjust styles for mobile responsiveness */
+@media (max-width: 768px) {
+    .about-content {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .portrait-frame {
+        width: 150px; /* Smaller portrait size for mobile */
+        height: 150px;
+        align-items: center;
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem; /* Smaller heading size for mobile */
+    }
+
+    .about-text p {
+        font-size: 0.9rem; /* Smaller text size for mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Responsive Design */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none; /* Hide toggle button on larger screens */
+    }
+    
+    /* Adjust navigation styling for desktop */
+    .nav-list {
+        gap: 40px; /* Adjust spacing as needed */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.5rem; /* Adjust for smaller screens */
+        padding: 0 15px; /* Add padding on the sides for mobile */
+    }
+    /* ... other responsive styles ... */
+}
