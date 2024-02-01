@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithun Photography Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <br>
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo">
+                MITHUN PHOTOGRAPHY COLLECTION
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="mobile-menu-toggle" aria-label="Open navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>A MOMENT FROZEN IN TIME</h1>
+            <p class="subheadline">THE WORLD IS MORE COLORFUL THAN THE EYE CAN SEE</p>
+            <a href="#portfolio" class="btn-main">Explore Gallery</a>
+        </div>
+    </section>
+    <!-- Rest of the landing page content will follow here -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="portrait-frame">
+                    <img src="C:/Users/gmi/OneDrive - Hewlett Packard Enterprise/Documents/Photography Site/images/CKS_8515.JPG"
+                        alt="Portrait" class="portrait"> <!-- Update with your image path -->
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Currently working as Developer at Hewlett Packard Enterprise, Bengaluru...</p>
+                    <p>I am a passionate photographer with a love for capturing the world's unseen beauty...</p>
+                    <!-- Add more about your biography and philosophy -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <div class="grid">
+                <div class="grid-item" onclick="openLightbox(this);">
+                    <img src="C:/Users/gmi/OneDrive - Hewlett Packard Enterprise/Documents/Photography Site/images/Abhi_20230502_184259_lmc_8.4.jpg"
+                        alt="Thumbnail" class="portfolio-thumbnail">
+                </div>
+                <div class="grid-item" onclick="openLightbox(this);">
+                    <img src="C:/Users/gmi/OneDrive - Hewlett Packard Enterprise/Documents/Photography Site/images/2.jpg"
+                        alt="Thumbnail" class="portfolio-thumbnail">
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid-item" onclick="openLightbox(this);">
+                    <img src="C:/Users/gmi/OneDrive - Hewlett Packard Enterprise/Documents/Photography Site/images/IMG20230314082349.jpg"
+                        alt="Thumbnail" class="portfolio-thumbnail">
+                </div>
+            </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <!-- Replace href with your social media links -->
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <!-- Add more social icons as needed -->
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(this);">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+    <!-- Rest of the landing page content will follow here -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
